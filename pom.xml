@@ -47,7 +47,7 @@
                     <release>11</release>
                 </configuration>
             </plugin>
-            <plugin>
+<!--            <plugin>
                 <groupId>net.sf.launch4j</groupId>
                 <artifactId>launch4j-maven-plugin</artifactId>
                 <version>1.7.25</version>
@@ -69,7 +69,7 @@
                         <mainClass>main.App</mainClass>
                     </manifest>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <groupId>org.openjfx</groupId>
@@ -118,7 +118,7 @@
                     </execution>
                 </executions>
             </plugin>
-<!--            <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.4.1</version>
@@ -138,7 +138,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
     <name>Taskova</name>
