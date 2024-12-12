@@ -1,0 +1,13 @@
+model\Task.class
+main\RegisterPageController.class
+main\LoginPageController.class
+model\DatabaseUtil.class
+main\App.class
+module-info.class
+model\Visualization.class
+main\AddTaskPageController.class
+main\ProfilePageController.class
+model\TaskManager.class
+main\DashboardPageController.class
+model\User.class
+model\Notification.class
