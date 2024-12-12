@@ -2,11 +2,11 @@ CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     description TEXT,
-    category ENUM('Work', 'Personal', 'Other'), /* Diubah menjadi ENUM */
+    category ENUM('Work', 'Personal', 'Other'),
     due_date DATE,
-    priority ENUM('Important and urgent', 'Important but not urgent', 'Urgent but not important', 'Not urgent not important'), /* Diubah menjadi ENUM */
-    is_done ENUM('in progress', 'done') DEFAULT 'in progress', /* Diubah menjadi ENUM */
-    time_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP /* Menambahkan kolom untuk waktu pembuatan task */
+    priority ENUM('Important and urgent', 'Important but not urgent', 'Urgent but not important', 'Not urgent not important'),
+    is_done ENUM('in progress', 'done') DEFAULT 'in progress',
+    time_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE users (
