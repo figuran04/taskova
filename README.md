@@ -1,4 +1,5 @@
 ### 1. **Mendownload dan Mengekstrak File Repository**
+
 1. **Buka Repository GitHub:**
    - Pergi ke halaman repository GitHub terkait.
 2. **Tekan Tombol "Code":**
@@ -13,6 +14,7 @@
 ---
 
 ### 2. **Menyalakan XAMPP**
+
 1. **Buka XAMPP:**
    - Jalankan aplikasi XAMPP dari komputer Anda.
 2. **Start Modul Apache dan MySQL:**
@@ -22,6 +24,7 @@
 ---
 
 ### 3. **Membuat Database di phpMyAdmin**
+
 1. **Buka phpMyAdmin:**
    - Buka browser dan ketikkan alamat: **`http://localhost/phpmyadmin`**.
 2. **Buat Database Baru:**
@@ -31,6 +34,7 @@
 ---
 
 ### 4. **Menjalankan SQL Script**
+
 1. **Buka Tab SQL:**
    - Pilih database **`taskova`** dari daftar di sidebar kiri.
    - Di bagian atas, klik menu **"SQL"**.
@@ -60,6 +64,7 @@ CREATE TABLE users (
 ALTER TABLE tasks ADD COLUMN user_id INT;
 ALTER TABLE tasks ADD FOREIGN KEY (user_id) REFERENCES users(user_id);
 ```
+
 3. **Eksekusi SQL:**
    - Klik tombol **"Go"** atau **"Execute"** untuk menjalankan perintah SQL.
    - Jika berhasil, tabel **`tasks`** dan **`users`** akan dibuat dalam database **`taskova`**.
@@ -67,6 +72,7 @@ ALTER TABLE tasks ADD FOREIGN KEY (user_id) REFERENCES users(user_id);
 ---
 
 ### 5. **Mengimpor Proyek ke NetBeans**
+
 1. **Buka NetBeans:**
    - Jalankan aplikasi **NetBeans IDE** di komputer Anda.
 2. **Import Proyek:**
@@ -76,3 +82,23 @@ ALTER TABLE tasks ADD FOREIGN KEY (user_id) REFERENCES users(user_id);
    - Klik **OK** atau **Next** untuk melanjutkan.
 4. **Selesaikan Impor:**
    - Setelah proses impor selesai, proyek akan muncul di daftar proyek di NetBeans.
+
+---
+
+### 6. **Menambahkan Modul Eksternal ke Proyek (Install Artifact Manually)**
+
+1. **Buka Dependencies Proyek:**
+
+   - Di tab **Projects**, cari proyek **Taskovaa** yang telah diimpor.
+   - Klik ikon segitiga di sebelah nama proyek untuk memperluas strukturnya.
+   - Temukan folder **Dependencies** dan klik ikon segitiga di sebelahnya.
+
+2. **Install Artifact Secara Manual:**
+
+   - Klik kanan pada **mysql-connector-j** di dalam folder **Dependencies**.
+   - Pilih opsi **"Install Artifact Manually"**.
+
+3. **Pilih File JAR:**
+   - Akan muncul jendela dialog untuk memilih file JAR.
+   - Arahkan ke lokasi file **mysql-connector-j-9.1.0.jar** yang ada di dalam folder projek yang telah diimport yaitu **Taskovaa.zip**, jika tidak menemukan maka extrak saja file **Taskovaa.zip** ke tempat yang mudah ditemui.
+   - Klik **Open** untuk menambahkan artifact tersebut.
