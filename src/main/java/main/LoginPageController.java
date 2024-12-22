@@ -14,21 +14,21 @@ import javafx.scene.control.Label;
  */
 public class LoginPageController {
 
-    @FXML
-    private Label titleApp;
+  @FXML
+  private Label titleApp;
 
-    @FXML
-    private void initialize() {
-        titleApp.setText("TASKOVA");
-        titleApp.setStyle("-fx-font-weight: bold;");
-    }
+  @FXML
+  private void initialize() {
+    titleApp.setText("TASKOVA");
+    titleApp.setStyle("-fx-font-weight: bold;");
+  }
 
-    @FXML
-    private void loginButton() {
-        try {
-            App.setRoot("dashboardpage");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+  @FXML
+  private void loginButton() {
+    try {
+      App.setRoot("dashboardpage");
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+  }
 }

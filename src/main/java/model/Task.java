@@ -4,118 +4,119 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Task {
-    private int id; // ID unik untuk task
-    private String title; // Judul task
-    private String description; // Deskripsi task
-    private String category; // Kategori task (enum: Work, Personal, Other)
-    private LocalDate dueDate; // Tanggal jatuh tempo task
-    private String priority; // Prioritas task (enum: Important and urgent, Important but not urgent, Urgent but not important, Not urgent not important)
-    private String isDone; // Status penyelesaian task (enum: in progress, done)
-    private LocalDateTime timeCreated; // Waktu ketika task diinput atau dikirim
 
-    // Constructor kosong
-    public Task() {
-    }
+  private int id; // ID unik untuk task
+  private String title; // Judul task
+  private String description; // Deskripsi task
+  private String category; // Kategori task (enum: Work, Personal, Other)
+  private LocalDate dueDate; // Tanggal jatuh tempo task
+  private String priority; // Prioritas task (enum: Important and urgent, Important but not urgent, Urgent but not important, Not urgent not important)
+  private String isDone; // Status penyelesaian task (enum: in progress, done)
+  private LocalDateTime timeCreated; // Waktu ketika task diinput atau dikirim
 
-    // Constructor dengan parameter lengkap
-    public Task(int id, String title, String description, String category, LocalDate dueDate, String priority, String isDone, LocalDateTime timeCreated) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.category = category;
-        this.dueDate = dueDate;
-        this.priority = priority;
-        this.isDone = isDone;
-        this.timeCreated = timeCreated;
-    }
+  // Constructor kosong
+  public Task() {
+  }
 
-    // Constructor tanpa ID (untuk menambahkan task baru)
-    public Task(String title, String description, String category, LocalDate dueDate, String priority, String isDone, LocalDateTime timeCreated) {
-        this.title = title;
-        this.description = description;
-        this.category = category;
-        this.dueDate = dueDate;
-        this.priority = priority;
-        this.isDone = isDone;
-        this.timeCreated = timeCreated;
-    }
+  // Constructor dengan parameter lengkap
+  public Task(int id, String title, String description, String category, LocalDate dueDate, String priority, String isDone, LocalDateTime timeCreated) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.category = category;
+    this.dueDate = dueDate;
+    this.priority = priority;
+    this.isDone = isDone;
+    this.timeCreated = timeCreated;
+  }
 
-    // Getter dan Setter
-    public int getId() {
-        return id;
-    }
+  // Constructor tanpa ID (untuk menambahkan task baru)
+  public Task(String title, String description, String category, LocalDate dueDate, String priority, String isDone, LocalDateTime timeCreated) {
+    this.title = title;
+    this.description = description;
+    this.category = category;
+    this.dueDate = dueDate;
+    this.priority = priority;
+    this.isDone = isDone;
+    this.timeCreated = timeCreated;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  // Getter dan Setter
+  public int getId() {
+    return id;
+  }
 
-    public String getTitle() {
-        return title;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  public String getTitle() {
+    return title;
+  }
 
-    public String getDescription() {
-        return description;
-    }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public String getCategory() {
-        return category;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
+  public String getCategory() {
+    return category;
+  }
 
-    public LocalDate getDueDate() {
-        return dueDate;
-    }
+  public void setCategory(String category) {
+    this.category = category;
+  }
 
-    public void setDueDate(LocalDate dueDate) {
-        this.dueDate = dueDate;
-    }
+  public LocalDate getDueDate() {
+    return dueDate;
+  }
 
-    public String getPriority() {
-        return priority;
-    }
+  public void setDueDate(LocalDate dueDate) {
+    this.dueDate = dueDate;
+  }
 
-    public void setPriority(String priority) {
-        this.priority = priority;
-    }
+  public String getPriority() {
+    return priority;
+  }
 
-    public String isDone() {
-        return isDone;
-    }
+  public void setPriority(String priority) {
+    this.priority = priority;
+  }
 
-    public void setDone(String isDone) {
-        this.isDone = isDone;
-    }
+  public String isDone() {
+    return isDone;
+  }
 
-    public LocalDateTime getTimeCreated() {
-        return timeCreated;
-    }
+  public void setDone(String isDone) {
+    this.isDone = isDone;
+  }
 
-    public void setTimeCreated(LocalDateTime timeCreated) {
-        this.timeCreated = timeCreated;
-    }
+  public LocalDateTime getTimeCreated() {
+    return timeCreated;
+  }
 
-    @Override
-    public String toString() {
-        return "Task{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", category=" + category +
-                ", dueDate=" + dueDate +
-                ", priority=" + priority +
-                ", isDone=" + isDone +
-                ", timeCreated=" + timeCreated +
-                '}';
-    }
+  public void setTimeCreated(LocalDateTime timeCreated) {
+    this.timeCreated = timeCreated;
+  }
+
+  @Override
+  public String toString() {
+    return "Task{"
+            + "id=" + id
+            + ", title='" + title + '\''
+            + ", description='" + description + '\''
+            + ", category=" + category
+            + ", dueDate=" + dueDate
+            + ", priority=" + priority
+            + ", isDone=" + isDone
+            + ", timeCreated=" + timeCreated
+            + '}';
+  }
 }
