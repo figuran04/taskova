@@ -1,3 +1,10 @@
+|Nama|NPM|
+|---|---|
+|Ida Faizatun Zakiyah	|2320506026|
+|Dika Elsaputra	|2320506032|
+|Fadhila Syahida Wibowo	|2320506046|
+|Ariel Numara R. Y.	|2330506052|
+
 ### 1. **Mendownload dan Mengekstrak File Repository**
 
 1. **Buka Repository GitHub:**
